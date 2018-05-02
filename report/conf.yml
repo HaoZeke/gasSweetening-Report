@@ -1,0 +1,3 @@
+documentclass: scrreprt
+geometry: margin=0.1in
+bibliography: refs.bib
