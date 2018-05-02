@@ -15,14 +15,14 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # First make compile.md
-: conf.yml W3L08_Grover\'s\ Algorithm.md \
+: conf.yml gasSweetening.md \
 |> echo "---" > compile.md && cat conf.yml >> compile.md && \
 echo "---" >> compile.md && \
-cat W3L08_Grover\'s\ Algorithm.md >> compile.md \
+cat gasSweetening.md >> compile.md \
 |> compile.md
 
 # Make PDF
 : conf.yml template.tex | compile.md \
-|> pandoc --filter pandoc-citeproc --filter pandoc-fignos --filter pandoc-eqnos compile.md -o gasSweetening.pdf --template template.tex \
+|> pandoc --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-citeproc compile.md -o gasSweeteningReport.pdf --template template.tex \
 |> gasSweeteningReport.pdf
 
