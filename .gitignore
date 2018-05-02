@@ -542,3 +542,7 @@ TSWLatexianTemp*
 tramp
 .\#*
 auto/
+
+# tup based crap
+compile.md
+.tup
