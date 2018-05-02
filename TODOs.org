@@ -1,0 +1,9 @@
+
+* TODO Generate flowsheets
+** Something with dynamic programming?
+** At the very least something with a nice image export
+* TODO Do the material and energy balances for the equipment
+** Use comsol
+* TODO IPC and steady state parameters
+* TODO Cost optimization
+
