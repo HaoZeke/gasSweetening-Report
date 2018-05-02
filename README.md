@@ -5,9 +5,10 @@ my bachelors degree in chemical engineering at HBTU, Kanpur.
 
 ## Technology
 
-* The report is generated with [goYoda](https://github.com/HaoZeke/goYoda)
+* The report is generated with a tup based  [goYoda](https://github.com/HaoZeke/goYoda) prototype
 * There might be a gatsby site eventually
 * COMSOL was used for the mass and energy balances
+* [DWSIM](http://dwsim.inforside.com.br/wiki/index.php?title=Main_Page) was used for generating the flowsheets and for dealing with the steady state usage
 * R was used for the statistical portions
 
 
