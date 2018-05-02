@@ -23,6 +23,6 @@ cat W3L08_Grover\'s\ Algorithm.md >> compile.md \
 
 # Make PDF
 : conf.yml template.tex | compile.md \
-|> pandoc --filter pandoc-citeproc compile.md -o gasSweetening.pdf --template template.tex \
-|> W3L08_Grover\'s\ Algorithm.pdf
+|> pandoc --filter pandoc-citeproc --filter pandoc-fignos --filter pandoc-eqnos compile.md -o gasSweetening.pdf --template template.tex \
+|> gasSweeteningReport.pdf
 
