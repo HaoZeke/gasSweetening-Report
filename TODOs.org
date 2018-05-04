@@ -7,3 +7,9 @@
 * TODO IPC and steady state parameters
 * TODO Cost optimization
 
+* TODO Add a new repo for the Kayode Code 
+
+* TODO Use variables in the Tupfile 
+
+* TODO Commit wordPrimitives with a readme for attribution eventually 
+
