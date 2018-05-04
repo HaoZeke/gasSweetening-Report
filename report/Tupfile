@@ -15,10 +15,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # First make compile.md
-: conf.yml gasSweetening.md \
+: conf.yml md/*.md \
 |> echo "---" > compile.md && cat conf.yml >> compile.md && \
 echo "---" >> compile.md && \
-cat gasSweetening.md >> compile.md \
+cat md/*.md >> compile.md \
 |> compile.md
 
 # Make PDF
