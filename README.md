@@ -3,6 +3,8 @@
 This is a complete reproducible project I carried out towards the completion of
 my bachelors degree in chemical engineering at HBTU, Kanpur.
 
+Later the code should be in a repo of its own too.
+
 ## Technology
 
 * The report is generated with a tup based  [goYoda](https://github.com/HaoZeke/goYoda) prototype
@@ -17,6 +19,7 @@ my bachelors degree in chemical engineering at HBTU, Kanpur.
 Every contributor and member of the tech stack. For more details read the
 report.
 
+The code was adapted from the excellent work by [Kayode Coker](https://archive.org/details/CokerK.1995FortranProgramsForChemicalProcessDesignAnalysisAndSimulation)
 ## Licenses
 
 The work is derived with attribution to the users.
