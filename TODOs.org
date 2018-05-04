@@ -13,3 +13,5 @@
 
 * TODO Commit wordPrimitives with a readme for attribution eventually 
 
+* TODO Force commit pdf at the end 
+
