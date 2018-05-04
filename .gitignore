@@ -546,3 +546,6 @@ auto/
 # tup based crap
 compile.md
 .tup
+
+# Temporary
+wordPrimitives/
