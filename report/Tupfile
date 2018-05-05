@@ -28,7 +28,7 @@ cat md/*.md >> compile.md \
 
 # Make pandoc TeX
 : conf.yml template.tex | compile.md \
-|> pandoc --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-citeproc compile.md -o tex/output.tex --template template.tex \
+|> pandoc --filter pandoc-tablenos --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-citeproc compile.md -o tex/output.tex --template template.tex \
 |> tex/output.tex
 
 # Make PDF
