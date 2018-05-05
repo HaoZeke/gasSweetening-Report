@@ -1,3 +1,10 @@
+# TeX meta vars
 documentclass: scrreprt
 geometry: margin=0.1in
 bibliography: refs.bib
+
+# Fignos meta vars
+fignos-capitalise: On
+fignos-cleveref: On
+eqnos-capitalise: On
+eqnos-cleveref: On
