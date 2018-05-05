@@ -21,8 +21,20 @@ echo "---" >> compile.md && \
 cat md/*.md >> compile.md \
 |> compile.md
 
-# Make PDF
-: conf.yml template.tex | compile.md \
-|> pandoc --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-citeproc compile.md -o gasSweeteningReport.pdf --template template.tex \
-|> gasSweeteningReport.pdf
+# Make pandoc PDF
+# : conf.yml template.tex | compile.md \
+# |> pandoc --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-citeproc compile.md -o gasSweeteningReport.pdf --template template.tex \
+# |> gasSweeteningReport.pdf
 
+# Make pandoc TeX
+: conf.yml template.tex | compile.md \
+|> pandoc --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-citeproc compile.md -o tex/output.tex --template template.tex \
+|> tex/output.tex
+
+# Make PDF
+# : tex/output.tex |> \
+# latexmk %f -r .latexmkrc -outdir=pdf/ -silent && \
+# latexmk -c %f -r .latexmkrc -outdir=pdf/ -silent \
+# |> pdf/%B.pdf
+
+# I'd rather run latexmk -pvc directly to get the mupdf output...
