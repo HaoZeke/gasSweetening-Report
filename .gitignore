@@ -543,6 +543,8 @@ tramp
 .\#*
 auto/
 
+# Intermediate TeX
+tex/
 # tup based crap
 compile.md
 .tup
