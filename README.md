@@ -16,9 +16,15 @@ Ideally the workflow requires:
 * [tup](http://gittup.org/tup/)
 * [tmux](https://github.com/tmux/tmux/wiki)
 
-For an automated workflow do ensure that you allow direnv like so:
+For an automated workflow do ensure that you allow direnv and setup the python
+setup like so:
 
 ``` bash
+# Get pipenv
+$ pip install pipenv
+# Get pipenv to create the virtualenv
+$ pipenv install
+# Allow direnv to automatically set the environment
 $ direnv allow
 ```
 
