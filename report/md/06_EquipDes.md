@@ -516,3 +516,111 @@ Similarly, for cleaning and assembly or inspection operations,
 loads in \autoref{bullet:aLoad} and \autoref{bullet:eLoad} should be considered.
 The design is based not on the permissible deflection but on the permissible
 stresses.
+
+# Mechanical Design Of GSU Absorption Tower
+
+## Objective
+We will develop here a an estimate of the thickness of the absorption tower used
+in the Gas Sweetening Unit based on the theory developed in the previous chapter.
+
+## Calculations
+
+| Variable                        | Value           |
+|---------------------------------|-----------------|
+| Column Diameter                 | $2.5 \si{\m}$   |
+| Column Height                   | $20 \si{\m}$    |
+| Valve Trays                     | $14$            |
+| Glass Wool Insulation thickness | $70 \si{\mm}$   |
+| Operating Pressure              | $60 \si{\bar}$  |
+| Joint Efficiency Factor         | $1$             |
+| Skirt Support Height            | $2.5  \si{\m}$  |
+| Column Material                 | Stainless Steel |
+| Material Operating Stress       | $130\si{\bar}$  |
+Table: GSU Tower Data. {#tbl:dataTowerGSU}
+
+The data is summarized in @tbl:dataTowerGSU and the material operating stress is
+the maximum operating stress under the column conditions.
+
+We will follow an iterative process:
+
+1. Design pressure
+2. Minimum thickness
+3. Preliminary division of trays
+4. Weight estimate of trays
+5. Stress estimate and analysis (3. if incorrect)
+
+### Design Pressure
+
+As we know the design pressure is estimated by @eq:mTow1.
+
+$$P_d=1.1 \times P_o $${#eq:mTow1}
+
+Where:
+
+* $P_d$ is the design pressure
+* $P_o$ is the operating pressure
+
+Hence we have:
+
+$$P_d=1.1*60=66 \si{\bar}$$
+
+### Minimum Thickness
+
+Our minimum thickness is determined from the column diameter, joint efficiency,
+and maximum allowable stress as per @eq:mTow2.
+
+$$t_{min}=\frac{J}{2} \frac{D_c}{P_{max}} $${#eq:mTow2}
+
+Where:
+
+* $t_{min}$ is the minimum thickness
+* $J$ is the joint efficiency factor
+* $P_{max}$ is the maximum material operating stress
+* $D_c$ is the column diameter
+
+Hence we have:
+
+$$t_{min}=\frac{1}{2}\times \frac{2500}{130}=9.61 \si{\mm}$$
+
+### Preliminary Tray Division
+
+For the sake of simplicity we shall first try $5$ parts for the column as
+depicted in @tbl:dataPlateNoGSU.
+
+| Plate Number | Plate Thickness $(\si{\mm})$ |
+|--------------|--------------------------|
+| $1$          | $10$                     |
+| $2$          | $12$                     |
+| $3$          | $14$                     |
+| $4$          | $16$                     |
+| $5$          | $18$                     |
+Table: GSU Plate Approximation. {#tbl:dataPlateNoGSU}
+
+We note that the factor $C_y$ for plate towers may be taken to be $1.15$ and
+that the $18\si{\mm}$ plate is at the bottom of the absorber.
+
+### Weight Estimation
+
+Therefore we now assert the diameter is given by
+
+# Column Internal Design Theory
+
+Having determined the exterior of the tower and it's mechanical properties we
+shall now move towards an understanding of the mechanical properties of the
+column internals, which involve plates, closures (heads) and their choices and
+performance reviews.
+
+## Sectional Construction
+
+The trays, downcomer segments and other tray components are usually constructed
+in sections for column diameter of $1\si{\m}$ and above. The plate sections are
+designed in such that it can be removed through the column manholes, preferably
+detachable from both above tray and tray below. The plate sections are installed
+usually starting from one side on a peripheral supported ring welded to inside
+shell wall. 
+
+The support ring is not normally extended into the downcomer area and tray
+perforations needs to be avoided over the support ring area. Support ring width
+is usually between $40\si{\mm}$ to $90\si{\mm}$. Trays are either clamped or
+bolted to the support ring.
+
