@@ -8,3 +8,5 @@ fignos-capitalise: On
 fignos-cleveref: On
 eqnos-capitalise: On
 eqnos-cleveref: On
+tablenos-capitalise: On
+tablenos-cleveref: On
