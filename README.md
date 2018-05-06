@@ -11,6 +11,7 @@ Ideally the workflow requires:
 
 * [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) 
 * [direnv](https://direnv.net/)
+* [pipenv](https://docs.pipenv.org/)
 * [pandoc](http://pandoc.org/)
 * [tup](http://gittup.org/tup/)
 * [tmux](https://github.com/tmux/tmux/wiki)

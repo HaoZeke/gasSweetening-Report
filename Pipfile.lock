@@ -1,0 +1,68 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "3c5e46e95987363df9630e2b15f7fecd94b9238ac2d614e2744e5011eaeaf654"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pandoc-eqnos": {
+            "hashes": [
+                "sha256:2803aa1a4f41e2d85b5ed064a828a3a913e573d9aa938c01041ed652ed79eb36"
+            ],
+            "index": "pypi",
+            "version": "==1.2.0"
+        },
+        "pandoc-fignos": {
+            "hashes": [
+                "sha256:5c06ec7c26f250b72307b73733ccfdb5bbcace91850a9c481a32207a62b6296c"
+            ],
+            "index": "pypi",
+            "version": "==1.2.0"
+        },
+        "pandoc-tablenos": {
+            "hashes": [
+                "sha256:a334b750e6f926e79f6c0735947e87fb0440e98314f80969bdcb7a7b1e35439a"
+            ],
+            "index": "pypi",
+            "version": "==1.2.0"
+        },
+        "pandoc-xnos": {
+            "hashes": [
+                "sha256:7eeff777653fd412d6263a75e575dfe2e2e9ce8b5bdc0d9026713daecb94712d"
+            ],
+            "version": "==1.0.1"
+        },
+        "pandocfilters": {
+            "hashes": [
+                "sha256:b3dd70e169bb5449e6bc6ff96aea89c5eea8c5f6ab5e207fc2f521a2cf4a0da9"
+            ],
+            "version": "==1.4.2"
+        },
+        "psutil": {
+            "hashes": [
+                "sha256:325c334596ad2d8a178d0e7b4eecc91748096a87489b3701ee16986173000aaa",
+                "sha256:33384065f0014351fa70187548e3e95952c4df4bc5c38648bd0e647d21eaaf01",
+                "sha256:51e12aa74509832443862373a2655052b20c83cad7322f49d217452500b9a405",
+                "sha256:52a91ba928a5e86e0249b4932d6e36972a72d1ad8dcc5b7f753a2ae14825a4ba",
+                "sha256:99029b6af386b22882f0b6d537ffed5a9c3d5ff31782974aeaa1d683262d8543",
+                "sha256:b10703a109cc9225cd588c207f7f93480a420ade35c13515ea8f20063b42a392",
+                "sha256:ddba952ed256151844d82fb13c8fb1019fe11ecaeacbd659d67ba5661ae73d0d",
+                "sha256:ebe293be36bb24b95cdefc5131635496e88b17fabbcf1e4bc9b5c01f5e489cfe",
+                "sha256:f24cd52bafa06917935fe1b68c5a45593abe1f3097dc35b2dfc4718236795890"
+            ],
+            "version": "==5.4.5"
+        }
+    },
+    "develop": {}
+}
