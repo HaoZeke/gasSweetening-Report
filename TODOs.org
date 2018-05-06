@@ -19,3 +19,5 @@
 
 * TODO Check the capture todo buffer before completing! 
 
+* TODO Finish and check the absorber design 
+
