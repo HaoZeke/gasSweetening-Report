@@ -1,5 +1,5 @@
 # TeX meta vars
-documentclass: scrreprt
+documentclass: scrbook
 geometry: margin=0.1in
 bibliography: refs.bib
 
@@ -10,3 +10,4 @@ eqnos-capitalise: On
 eqnos-cleveref: On
 tablenos-capitalise: On
 tablenos-cleveref: On
+

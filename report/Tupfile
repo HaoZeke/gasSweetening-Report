@@ -17,6 +17,7 @@
 # First make compile.md
 : conf.yml md/*.md \
 |> echo "---" > compile.md && cat conf.yml >> compile.md && \
+cat docConf.yml >> compile.md && \
 echo "---" >> compile.md && \
 cat md/*.md >> compile.md \
 |> compile.md
