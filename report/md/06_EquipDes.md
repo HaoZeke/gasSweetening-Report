@@ -156,12 +156,8 @@ Where we note that:
 
 Therefore we note that
 
-\begin{align}
-\label{eq:3}
-f=\textnormal{stress}= \frac{P}{a} = \frac{pd}{4t} \\
-\label{eq:4}
-t= \frac{pd}{longIntP}
-\end{align}
+$$ f=\textnormal{stress}= \frac{P}{a} = \frac{pd}{4t} $$
+$$ t= \frac{pd}{4f} $${#eq:longIntP}
 
 #### Circumferential Stresses
 
@@ -623,4 +619,113 @@ The support ring is not normally extended into the downcomer area and tray
 perforations needs to be avoided over the support ring area. Support ring width
 is usually between $40\si{\mm}$ to $90\si{\mm}$. Trays are either clamped or
 bolted to the support ring.
+
+The support beams prevent tray deflection under load for larger diameter column.
+One or more major beams are required for large diameter column (usually $<3\si{\m}$).
+Trays can be supported by support rings and minor beams for small diameter
+column (usually $<3\si{\m}$) i.e. omitting the major beams.
+
+The beams are commonly placed at about $0.6\si{\m}$ apart and should able to
+hold the necessary weight during column operation as well as installation. The maximum
+plate deflection under the operating conditions should be less than $3\si{\mm}$ for
+tower diameter more than $2.5\si{\m}$. The number of plate sections installed
+under an apron and across the accumulator trays is minimized. Clearance
+should be provided between the bottom of the beams and the tray below for the
+perpendicular installation of the beams to the liquid flow direction on the tray
+below @fig:sectionCons i.e. in case of cross flow.
+
+![ Common sectional construction of plate](img/sectionCons.png "Sectional Plate"){#fig:sectionCons}
+
+
+## Cartridge Construction
+The cartridge or stacked type plate construction is used for column diameters
+smaller than $1\si{\m}$ as in such small diameter columns man entry to the
+column for the installation and necessary maintenance work is difficult.
+Cartridge constructions are employed for sieve, valve and bubble cap trays.
+Cartridge assemblies of $10$ plates or so, are formed with the help of screwed
+rods and plate spacer bars.
+
+The tall columns are divided into multiple flanged sections
+and the prefabricated cartridge tray assemblies are installed in each flanged
+sections with suitable downcomer clearances. The plates are not fixed to the
+shell wall and leakages may occur. A vertical metal seal is frequently used
+around each tray to decrease leakage around the tray edge.
+
+Classical cartridge construction is shown in @fig:cartridgeCons.
+
+![Common plate cartridge construction](img/cartridgeCons.png "Cartridges"){#fig:cartridgeCons}
+
+
+## Downcomer Details
+The liquid from the top tray is directed to the tray below through a downcomer
+or downspout. The downcomer liquid flow passage is normally formed by a vertical
+plate starting from the weir outlet, called an apron. The adequate residence
+time needs to be ensured in the downcomers for the disengagement of vapor/gas
+from liquid. The downcomer residence time of more than $3\si{\s}$  is desirable to get
+only clear liquid on the tray. The different types of segmental downcomers
+constructions are shown in @fig:segmentalDowncomers. The bottom downcomer area is normally more
+than $50\%$ of the top downcomer area for sloped downcomers.
+
+![Downcomer segmental design](img/sectionalDowncomers.png "Downcomer parts"){#fig:segmentalDowncomers}
+
+### Design
+
+![Downcomer backup](img/downComer.png){#fig:bringmedown}
+
+The downcomer area and plate spacing must be such that the level of the liquid
+and froth in the downcomer is well below the top of the outlet weir on the plate
+above. If the level rises above the outlet weir the column will flood. The
+backup of liquid in the downcomer is caused by the pressure drop over the plate
+(the downcomer in effect forms one leg of a U-tube) and the resistance to flow
+in the downcomer itself; see @fig:bringmedown
+
+In terms of clear liquid the downcomer backup is given by:
+
+$$h_b=(h_w+h_{ow})+h_t+h_{dc}$${#eq:misery}
+
+Where:
+
+* $h_b$ is the downcomer backup from plate surface in \si{mm}
+* $h_{dc}$ is the head loss in the downcomer in \si{mm}
+
+The main resistance to flow will be caused by the constrictionat the downcomer outles and the head loss in the downcomer can be estimated using the equiation given by Cicalese et al. (1947):
+
+$$ h_{dc}=166\left[\frac{L_{wd}}{\rho_L A_m}\right]^2 $${#eq:One}
+Where:
+
+* $L_{wd}$ is the liquid flow rate in the downcomer in \si{kg/s}
+* $A_m$ is either the downcomer area $A_d$ or the clearance area under the
+  downcomer $A_{ap}$, whichever is smaller in \si{m^2}
+
+$$ A_{ap}=h_{ap}l_w $${#eq:Two}
+Where:
+
+* $h_{ap}$ is the height of the bottom edge of the apron above the place.
+
+$$ h_{ap}=h_w- 5 \textnormal{ to } 10\si{ \mm} $$
+
+
+Froth Height
+
+:   To predict the height of “aerated” liquid on the plate, and the height of froth in the downcomer, some
+means of estimating the froth density is required. The density of the “aerated” liquid will normally be between 0.4 to 0.7 times that of the clear liquid. For design purposes it is usually satisfactory to assume an average value of 0.5 of the liquid density. This value is also taken as the mean density of the fluid in the downcomer, which means that for safe design the clear liquid backup, calculated from equation @eq:misery, should not exceed half the plate spacing lt, to avoid flooding. Allowing for the weir height:
+$$h_b \leq \frac{1}{2}(l_t+h_w) $$
+
+
+
+    This criterion is typically considered to be over safe, and where close plate spacing is desired a better estimate of the froth density in the downcomer should be made.
+
+Downcomer Residence Time
+
+:   Sufficient residence time must be allowed in the downcomer for the entrained vapor to disengage
+from the liquid stream to prevent heavily “aerated” liquid being carried under the downcomer.
+A time of at least 3 seconds is recommended.
+The downcomer residence time is given by
+
+$$t_r=\frac{A_d h_{bc} \rho_L}{L_{wd}} $${#eq:}
+
+Where:
+
+* $t_r$ is the residence time, (\si{s}) 
+* $h_{bc}$ is the clear liquid back-up (\si{m})
 
