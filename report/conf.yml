@@ -1,6 +1,13 @@
 # TeX meta vars
 documentclass: scrbook
-geometry: margin=0.1in
+papersize: a4
+# geometry:
+#   - left=20mm
+#   - right=20mm
+  # - top=1.5in
+  # - bottom=1.5in
+  # - left=1.35in
+  # - right=1.35in
 bibliography: refs.bib
 
 # Fignos meta vars

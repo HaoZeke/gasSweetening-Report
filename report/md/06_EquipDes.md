@@ -514,7 +514,6 @@ The design is based not on the permissible deflection but on the permissible
 stresses.
 
 # Mechanical Design Of GSU Absorption Tower
-
 ## Objective
 We will develop here a an estimate of the thickness of the absorption tower used
 in the Gas Sweetening Unit based on the theory developed in the previous chapter.
@@ -729,3 +728,48 @@ Where:
 * $t_r$ is the residence time, (\si{s}) 
 * $h_{bc}$ is the clear liquid back-up (\si{m})
 
+
+## Feed Inlets and Side Stream Draws 
+The feed liquid is commonly introduced vertically downward into the downcomer of
+the tray above the feed point through an open pipe. A slotted branch distributor
+is used for of flashing feed (liquid) to avoid early flooding as shown in
+@fig:feedSide.
+
+The vapor generally enters the column tangentially through an open inlet nozzle
+placed almost at right angles to the liquid flow on the above tray. The
+clearance between the feed pipe end and feed plate below is normally kept more
+than 0.4 m when the feed liquid is flashed in active tray area. Wider tray
+spacing is needed where the feed pipe and the side stream takeoff pipe to
+provide a liquid seal are installed. 
+
+![Nozzles and inlets](img/feedSide.png "Nozzle, inlet"){#fig:feedSide}
+
+## Tray Miscellany
+
+We also briefly discuss here two important practical aspects of trays, namely
+the drainage and manways.
+
+### Tray drainage
+
+Some amount of liquid is usually remains trapped on a bubble cap (positive seal
+tray) and on certain valve trays when the column is shut down. This liquid is
+normally drains through weep holes located near the outlet weirs. Weep hole
+diameter usually ranges from $3$ to $15 \si{mm}$. The recommended weep hole area
+is $4 \textnormal{in}^{2}$ per $100 \textnormal{ft}^{2}$ of tray area with
+$50$ bubble caps and $4$in weir to drain in about $8 \si{hr}$ .
+
+### Tray manways
+
+The maintenance workers travel from one tray to another through tray manways .
+The size of the manways should be such that a person can safely travel through a
+tray manway segment and also it is removable through the column manholes.
+Manways are usually rectangular and the recommended size is $\si{40 cm \times 50
+cm}$. Tray manways should be removable from top and as well as from the tray
+below.
+
+
+# Tray Column Design
+
+## Objective
+To find out the height of the column and the thickness of torispherical head as
+well as the thickness of the trays.
