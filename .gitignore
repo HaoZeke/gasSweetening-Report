@@ -541,6 +541,7 @@ TSWLatexianTemp*
 # Emacs stuff
 tramp
 .\#*
+:/
 auto/
 
 # Intermediate TeX
