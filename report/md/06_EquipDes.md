@@ -766,3 +766,14 @@ tray manway segment and also it is removable through the column manholes.
 Manways are usually rectangular and the recommended size is $\si{40 cm \times 50
 cm}$. Tray manways should be removable from top and as well as from the tray
 below.
+
+## Ends
+
+We assert that under the design considerations already enumerated in the project
+our tray column is considered to be an unfired pressure vessel as defined by IS
+
+Some common heads used for domed vessels, like that of our tray column are:
+
+1. 
+
+For reasons of performance and ease of fabrication
