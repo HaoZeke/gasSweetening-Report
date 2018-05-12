@@ -766,21 +766,3 @@ tray manway segment and also it is removable through the column manholes.
 Manways are usually rectangular and the recommended size is $\si{40 cm \times 50
 cm}$. Tray manways should be removable from top and as well as from the tray
 below.
-
-
-# Tray Column Design
-
-## Objective
-To find out the height of the column and the thickness of torispherical head as
-well as the thickness of the trays.
-
-From the previous calculations we note summarized the results in @tbl:dataTowerReplace 
-
-| Variable                  | Value                    |
-|---------------------------|--------------------------|
-| Shell Internal Diameter   | $2464 \si{\mm}$          |
-| Valve Trays               | $14$                     |
-| Tray Spacing              | $600 \si{\mm}$           |
-| Hole Diameter             | $12 \si{\mm}$            |
-| Plate Thickness           | $18 \si{\mm}$            |
-Table: Previously Calculated Data. {#tbl:dataTowerReplace}
