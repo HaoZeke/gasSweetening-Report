@@ -100,7 +100,7 @@ C   READ THE FLUID VISCOSITY, cP : TVIS
 C   READ THE FLUID DENSITY, lb/ft^3 : TDEN
 C   READ THE FLUID FLOWRATE, lb/hr.: TW
 
-      READ (3, *, ERR=19) TL, TNP, TFF, TTI
+      READ (3, *, ERR=19) TL, TNP, TFF, TT1
       READ (3, *, ERR=19) TT2, TSHC, TVIS, TDEN
       READ (3, *, ERR=19) TFK, TW
 
@@ -148,7 +148,7 @@ C   CALCULATE THE HEAT LOAD
       Q = TW*TSHC*ABS(TT2-TT1)
 C   CALCULATE THE LOG MEAN TEMPERATURE DIFFERENCE (LMTD)
 
-      VALI = (TS1-TT2)-(TS2-TT1)
+      VAL1 = (TS1-TT2)-(TS2-TT1)
       VAL2 = ALOG((TS1-TT2)/(TS2-TT1))
       LMTD = ABS(VAL1/VAL2)
 C   CALCULATE THE APPROACH FACTOR
@@ -177,7 +177,7 @@ C   Broken IF maybe. (dangling)
         TNP = TNP+2.
         GO TO 55
         ELSE
-        SUM43 = ALOG(SUM41/SUH42)
+        SUM43 = ALOG(SUM41/SUM42)
       ENDIF
 
       F = (SUM6*SUM7)/SUM43
@@ -194,10 +194,10 @@ C   Broken IF maybe. (dangling)
       ELSEIF (NS .GE. 2.0 .AND. NT .GE. 4.0) THEN
         SUM8 = (R*R+1.0)**0.5/(2.0*(R-1.0))
         SUM9 = ALOG((1.0-P)/(1.0-P*R))
-        SUM10 = 2/P-1.0-R+((2/P)*((1.0-P)*(I-P*R))**0.5)+(R*R+1.)**0.5
+        SUM10 = 2/P-1.0-R+((2/P)*((1.0-P)*(1-P*R))**0.5)+(R*R+1.)**0.5
         SUM11 = 2/P-1.0-R+((2/P)*((1.0-P)*(1.-P*R))**0.5)-(R*R+1.)**0.5
 
-        F = (SUMS*SUM9)/ALOG(SUMI0/SUMII)
+        F = (SUM8*SUM9)/ALOG(SUM10/SUM11)
       ENDIF
 
 C   CORRECTED MEAN TEPERATURE
@@ -211,7 +211,7 @@ C Btu/hr.ft^2.oF
 
 C   CALCULATE THE OUTSIDE AREA OF THE HEAT EXCHANGER UNIT ft^2
 
-      AREA=(TOD/12.0*PITCH*NT*NS*TL)
+      AREA=(TOD/12.0*TP*NT*NS*TL)
 
       Q1 = AREA*U*CMTD
       CALL RESULT
@@ -455,7 +455,7 @@ C   ***************************************************************
 210   FORMAT (2X,'SPECIFIC HEAT CAPACITY, Btu/ib.oF:',T40, F8.3,T60,
      +     F8.3)
 
-      WRITE (1, 220)TDEN, SDE
+      WRITE (1, 220)TDEN, SDEN
 220   FORMAT (2X,'FLUID DENSITY, lb/ft^3:',T40,F8.3,T60,F8.3)
 
       WRITE (1, 230) TVIS, SVIS
