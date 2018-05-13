@@ -441,7 +441,7 @@ C   ***************************************************************
 160   FORMAT (78(1H*))
       
       WRITE (1, 170)
-170   FORMAT (40X,'TUBE SIDE',1OX,'SHELL SIDE')
+170   FORMAT (40X,'TUBE SIDE',10X,'SHELL SIDE')
       
       WRITE (1, 180)
 180   FORMAT (78(1H-))
@@ -450,7 +450,7 @@ C   ***************************************************************
 190   FORMAT (2X,'FLUID TYPE:',T40, A15, T60, A15)
       
       WRITE (1, 200) TW, SW
-200   FORMAT (2X,'FLUID FLOW RATE , lb/hr.:',T40, F10.0,T60,F10.O)
+200   FORMAT (2X,'FLUID FLOW RATE , lb/hr.:',T40, F10.0,T60,F10.0)
       
       WRITE (1, 210) TSHC, SSHC
 210   FORMAT (2X,'SPECIFIC HEAT CAPACITY, Btu/ib.oF:',T40, F8.3,T60,
@@ -540,7 +540,7 @@ C   ***************************************************************
 490      FORMAT (2X,'HEAT TRANSFERRED, Btu/hr:',T40,F12.0)
       
       WRITE (1, 500)
-500      FORMAT (1H,78(IH-) )
+500      FORMAT (1H,78(1H-) )
       
 C   FORM FEED THE PRINTING PAPER TO THE TOP OF THE NEXT PAGE.
       
