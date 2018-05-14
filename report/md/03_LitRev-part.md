@@ -9,14 +9,14 @@ scales.
 
 ## Theory of Tall Vertical Vessels 
 
-Self supporting tall equipments are widely used in chemical process industries.
-Tall vessels may or may not be designed to be self supporting. Distillation
+Self-supporting tall vessels are widely used in chemical process industries.
+Tall vessels may or may not be designed to be self-supporting. Distillation
 column, fractionating columns, absorption tower, multistage reactor, stacks,
 chimneys etc. comes under the category of tall vertical vessels. In earlier
 times high structure (i.e. tall vessels) were supported or stabilized by the use
 of guy wires.
 
-Design of self supporting vertical vessels is a relatively recent concept in
+Design of self-supporting vertical vessels is a relatively recent concept in
 equipment design. and it has been widely accepted in the chemical industries
 because it is uneconomical to allocate valuable space for the wires of guyed
 towers. In these units ratio of height to diameter is considerably large due to
@@ -25,15 +25,15 @@ action. Many of the units are provided with insulation, number of attachments,
 piping system etc.
 
 
-For example distillation and absorption towers are associated with a set of
-auxiliary equipments i.e. reboiler, condenser, feed preheater, cooler and also
+For example, distillation and absorption towers are associated with a set of
+auxiliary equipment i.e. reboiler, condenser, feed preheater, cooler and also
 consists of a series of internal accessories such as plates or trays or variety
 of packings.
 
  Often the vertical vessels/columns are operated under severe conditions, and
 type of the material these columns handles during operation may be toxic,
 inflammable or hazardous in other ways. Structural failure is a serious concern
-with this type of columns. As a result the, the prediction of membrane stresses
+with this type of columns. As a result, the prediction of membrane stresses
 due to internal or external pressure will not be sufficient to design such
 vessels. Therefore, special considerations are necessary to take into account
 and predict the stresses induced due to dead weight, action of wind and seismic
@@ -325,10 +325,10 @@ $$P_{bw} = K_{1} K_{2} p_{1} h_{1} D_{o}$$
 
 Where:
 
-* P_{bw} is the total force due to wind load acting on the bottom part of the vessel with height equal to or less than $20\si{\meter}$
-* D_{o} is the outer diameter of the vessel including the insulation thickness
-* h_{1} is the height of the bottom part of the vessel equal to or less than $20\si{\meter}$
-* K_{1} is the coefficient depending upon the shape factor (i.e. $1.4$ for flat plate; $0.7$ for cylindrical surface)
+* $P_{bw}$ is the total force due to wind load acting on the bottom part of the vessel with height equal to or less than $20\si{\meter}$
+* $D_{o}$ is the outer diameter of the vessel including the insulation thickness
+* $h_{1}$ is the height of the bottom part of the vessel equal to or less than $20\si{\meter}$
+* $K_{1}$ is the coefficient depending upon the shape factor (i.e. $1.4$ for flat plate; $0.7$ for cylindrical surface)
 
 
 #### Load due to wind acting on the upper portion of the vessel
@@ -398,7 +398,7 @@ of the column must have an increased thickness. If the above condition does not
 satisfy then calculation of the axial stress with an increase in the thickness
 according to @eq:weightStressShell and @eq:shriDhar are repeated, and this repetitive steps in
 calculation helps to estimate subsequent height ranges to corresponds with
-increase thickness. The procedure is repeated till the entire height of the
+increased thickness. The procedure is repeated till the entire height of the
 vessel is covered.
 
 ## Column Internals
@@ -419,7 +419,7 @@ weight
 \end{itemize}
 
 One piece trays may be made of materials such as cast iron, copper or steel
-including the risers and down comers, with a thickness of $2$ to $6$ \si{\mm} depending on
+including the risers and downcomers, with a thickness of $2$ to $6$ \si{\mm} depending on
 the diameter and the material. 
 
  
@@ -433,8 +433,7 @@ thermal expansion within reasonable limits and their diameters are also limited
 to small sizes. Whereas the one piece shaped tray made of ductile material is
 comparatively thin and has a limited ability to absorb forces due to thermal
 expansion. Therefore, in order to prevent the distortion of the tray floor,
-provision of packing seal between the edge of the tray and column wall help to
-relieve these problem.
+provision should be made for a packing seal between the edge of the tray and column wall.
 
 
 On the other hand one of the main advantages of the sectional tray is its
@@ -456,7 +455,7 @@ or and made adequately thick.
 Deflections caused by the different loads are: 
 
 \begin{enumerate}[label=(\alph*)]
-\item tray weight with contacting devices and down comers \label{bullet:aLoad}
+\item tray weight with contacting devices and downcomers \label{bullet:aLoad}
 \item liquid weight 
 \item impact load of the down coming liquid \label{bullet:cLoad}
 \item weight of maintenance personnel and tools
@@ -592,8 +591,8 @@ $$ h_{ap}=h_w- 5 \textnormal{ to } 10\si{ \mm} $$
 
 Froth Height
 
-:   To predict the height of “aerated” liquid on the plate, and the height of froth in the downcomer, some
-means of estimating the froth density is required. The density of the “aerated” liquid will normally be between 0.4 to 0.7 times that of the clear liquid. For design purposes it is usually satisfactory to assume an average value of 0.5 of the liquid density. This value is also taken as the mean density of the fluid in the downcomer, which means that for safe design the clear liquid backup, calculated from equation @eq:misery, should not exceed half the plate spacing lt, to avoid flooding. Allowing for the weir height:
+:   To predict the height of "aerated" liquid on the plate, and the height of froth in the downcomer, some
+means of estimating the froth density is required. The density of the "aerated" liquid will normally be between 0.4 to 0.7 times that of the clear liquid. For design purposes it is usually satisfactory to assume an average value of 0.5 of the liquid density. This value is also taken as the mean density of the fluid in the downcomer, which means that for safe design the clear liquid backup, calculated from equation @eq:misery, should not exceed half the plate spacing, to avoid flooding. Allowing for the weir height:
 $$h_b \leq \frac{1}{2}(l_t+h_w) $$
 
 
@@ -603,7 +602,7 @@ $$h_b \leq \frac{1}{2}(l_t+h_w) $$
 Downcomer Residence Time
 
 :   Sufficient residence time must be allowed in the downcomer for the entrained vapor to disengage
-from the liquid stream to prevent heavily “aerated” liquid being carried under the downcomer.
+from the liquid stream to prevent heavily "aerated" liquid being carried under the downcomer.
 A time of at least 3 seconds is recommended.
 The downcomer residence time is given by
 
@@ -771,11 +770,11 @@ Thermal design of a shell and tube heat exchanger typically includes the determi
 
 ## Shell
 
-Shell is the container for the shell fluid and the tube bundle is placed inside the shell. Shell diameter should be selected in such a way to give a close fit of the tube bundle. The clearance between the tube bundle and inner shell wall depends on the type of exchanger . Shells are usually fabricated from standard steel pipe with satisfactory corrosion allowance. The shell thickness of 3/8 inch for the shell ID of 12-24 inch can be satisfactorily used up to 300 psi of operating pressure.
+Shell is the container for the shell fluid and the tube bundle is placed inside the shell. Shell diameter should be selected in such a way to give a close fit of the tube bundle. The clearance between the tube bundle and inner shell wall depends on the type of exchanger. Shells are usually fabricated from standard steel pipe with satisfactory corrosion allowance. The shell thickness of $3/8$ inch for the shell ID of $12-24$ inch can be satisfactorily used up to $300$ psi of operating pressure.
 
 ## Tube
 
-Tube OD of ¾ and 1'' are very common to design a compact heat exchanger. The most efficient condition for heat transfer is to have the maximum number of tubes in the shell to increase turbulence. The tube thickness should be enough to withstand the internal pressure along with the adequate corrosion allowance. The tube thickness is expressed in terms of BWG (Birmingham Wire Gauge) and true outside diameter (OD). The tube length of 6, 8, 12, 16, 20 and 24 ft are preferably used. Longer tube reduces shell diameter at the expense of higher shell pressure drop. Finned tubes are also used when fluid with low heat transfer coefficient flows in the shell side. Stainless steel, admiralty brass, copper, bronze and alloys of copper-nickel are the commonly used tube materials.
+Tube OD of $\frac{3}{4}$ and $1$ are very common to design a compact heat exchanger. The most efficient condition for heat transfer is to have the maximum number of tubes in the shell to increase turbulence. The tube thickness should be enough to withstand the internal pressure along with the adequate corrosion allowance. The tube thickness is expressed in terms of BWG (Birmingham Wire Gage) and true outside diameter (OD). The tube length of $6$, $8$, $12$, $16$, $20$ and $24$ ft are preferably used. Longer tube reduces shell diameter at the expense of higher shell pressure drop. Finned tubes are also used when fluid with low heat transfer coefficient flows in the shell side. Stainless steel, admiralty brass, copper, bronze and alloys of copper-nickel are the commonly used tube materials.
 
 ## Tube pitch, tube-layout and tube-count
 
@@ -787,7 +786,7 @@ The number of tubes that can be accommodated in a given shell ID is called tube 
 
 ## Tube passes
 
-The number of passes is chosen to get the required tube side fluid velocity to obtain greater heat transfer co-efficient and also to reduce scale formation. The tube passes vary from 1 to 16. The tube passes of 1, 2 and 4 are common in application. The partition built into exchanger head known as partition plate (also called pass partition) is used to direct the tube side flow.
+The number of passes is chosen to get the required tube side fluid velocity to obtain greater heat transfer co-efficient and also to reduce scale formation. The tube passes vary from $1$ to $16$. The tube passes of $1$, $2$ and $4$ are common in application. The partition built into exchanger head known as partition plate (also called pass partition) is used to direct the tube side flow.
 
 Common tube layouts.
 
@@ -798,17 +797,25 @@ Common tube layouts.
 
 ## Tube sheet
 
-The tubes are fixed with tube sheet that form the barrier between the tube and shell fluids. The tubes can be fixed with the tube sheet using ferrule and a soft metal packing ring. The tubes are attached to tube sheet with two or more grooves in the tube sheet wall by ‘tube rolling'. The tube metal is forced to move into the grooves forming an excellent tight seal. This is the most common type of fixing arrangement in large industrial exchangers. The tube sheet thickness should be greater than the tube outside diameter to make a good seal. The recommended standards (IS:4503 or TEMA) should be followed to select the minimum tube sheet thickness.
+The tubes are fixed with tube sheet that form the barrier between the tube and shell fluids. The tubes can be fixed with the tube sheet using ferrule and a soft metal packing ring. The tubes are attached to tube sheet with two or more grooves in the tube sheet wall by ‘tube rolling'. The tube metal is forced to move into the grooves forming an excellent tight seal. This is the most common type of fixing arrangement in large industrial exchangers. The tube sheet thickness should be greater than the tube outside diameter to make a good seal. The recommended standards (IS:$4503$ or TEMA) should be followed to select the minimum tube sheet thickness.
 
 ## Baffles
 
-Baffles are used to increase the fluid velocity by diverting the flow across the tube bundle to obtain higher transfer co-efficient. The distance between adjacent baffles is called baffle-spacing. The baffle spacing of 0.2 to 1 times of the inside shell diameter is commonly used. Baffles are held in positioned by means of baffle spacers. Closer baffle spacing gives greater transfer co-efficient by inducing higher turbulence. The pressure drop is more with closer baffle spacing. The various types of baffles are shown in **Figure** . In case of cut-segmental baffle, a segment (called baffle cut) is removed to form the baffle expressed as a percentage of the baffle diameter. Baffle cuts from 15 to 45% are normally used. A baffle cut of 20 to 25% provide a good heat-transfer with the reasonable pressure drop. The % cut for segmental baffle refers to the cut away height from its diameter. **Figure** also shows two other types of baffles.
+Baffles are used to increase the fluid velocity by diverting the flow across the tube bundle to obtain higher transfer co-efficient. The distance between adjacent baffles is called baffle-spacing. The baffle spacing of $0.2$ to $1$ times of the inside shell diameter is commonly used. Baffles are held in positioned by means of baffle spacers. Closer baffle spacing gives greater transfer co-efficient by inducing higher turbulence. The pressure drop is more with closer baffle spacing. The various types of baffles are shown in **Figure** . In case of cut-segmental baffle, a segment (called baffle cut) is removed to form the baffle expressed as a percentage of the baffle diameter. Baffle cuts from $15$ to $45$\% are normally used. A baffle cut of $20$ to $25$\% provide a good heat-transfer with the reasonable pressure drop. The \% cut for segmental baffle refers to the cut away height from its diameter. 
 
 ## Fouling Considerations
 
-The most of the process fluids in the exchanger foul the heat transfer surface. The material deposited reduces the effective heat transfer rate due to relatively low thermal conductivity. Therefore, net heat transfer with clean surface should be higher to compensate the reduction in performance during operation. Fouling of exchanger increases the cost of (i) construction due to oversizing, (ii) additional energy due to poor exchanger performance and (iii) cleaning to remove deposited materials. A spare exchanger may be considered in design for uninterrupted services to allow cleaning of exchanger.
+The most of the process fluids in the exchanger foul the heat transfer surface. The material deposited reduces the effective heat transfer rate due to relatively low thermal conductivity. Therefore, net heat transfer with clean surface should be higher to compensate the reduction in performance during operation. Fouling of exchanger increases the cost of the following:
 
-The effect of fouling is considered in heat exchanger design by including the tube side and shell side fouling resistances. Typical values for the fouling coefficients and resistances are summarized in **Table 1.3** . The fouling resistance (fouling factor) for petroleum fractions are available in the text book.
+\begin{enumerate}[label=(\alph*)]
+\item construction due to oversizing
+\item additional energy due to poor exchanger performance
+\item cleaning to remove deposited materials
+\end{enumerate}
+
+A spare exchanger may be considered in design for uninterrupted services to allow cleaning of exchanger.
+
+The effect of fouling is considered in heat exchanger design by including the tube side and shell side fouling resistances. The fouling resistance (fouling factor) for petroleum fractions are available in reference books.
 
 ## Selection of fluids for tube and the shell side
 

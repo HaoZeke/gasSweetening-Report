@@ -55,14 +55,10 @@ The steel data is for Hot-Rolled Plates of $15-40\si{mm}$ thickness and width ov
 
 The preliminary value for the March CE Plant Cost Index(CEPCI; the most recent
 value available) rose compared to the previous month's value, continuing a
-string of six straight months of increasing values. all four of the major
-subindices-Equipment,Construction Labor, Buildings and Engineering
-&Supervision-increased in March compared to their February values. The
-preliminary overall monthly CEPCI value for March 2017 stands at 5.0% higher
-than the corresponding value from March 2016. Meanwhile the latest Current
-Business Indicators (CBI) saw a small rise in the CPI Output Index for April,
-while the March value for the CPI Value of Output declined slightly. The April
-Productivity Index decreased by a small margin.
+string of six straight months of increasing values. All four of the major
+subindices - Equipment, Construction Labor, Buildings and Engineering
+\& Supervision - increased in March compared to their February values. The
+preliminary overall monthly CEPCI value for March $2017$ stands at $5.0$\% higher than the corresponding value from March $2016$. Meanwhile the latest Current Business Indicators (CBI) saw a small rise in the CPI Output Index for April, while the March value for the CPI Value of Output declined slightly. The April Productivity Index decreased by a small margin.
 
 The Index is shown in @fig:CEPCI.
 
@@ -134,13 +130,10 @@ and other expenditure to be balanced by the cumulative income.
 
 ## Present Worth
 
-In an economic evaluation of a project, it is often necessary to evalu-
-ate the present value of funds that will be received at some definite time
-in the future. The present value (PV) of a future amount can be consid-
-ered as the present principal at a given rate and compounded to give the
+In an economic evaluation of a project, it is often necessary to evaluate the present value of funds that will be received at some definite time
+in the future. The present value (PV) of a future amount can be considered as the present principal at a given rate and compounded to give the
 actual amount received at a future date. The relationship between the
-indicated future amount and the present value is determined by a dis-
-count factor. Discounting evaluates each year's flow on an equal basis.
+indicated future amount and the present value is determined by a discount factor. Discounting evaluates each year's flow on an equal basis.
 It does this by means of the discount, or present value factor, and the
 reciprocal of the compound interest factor $(1 + i)^n$ with
 

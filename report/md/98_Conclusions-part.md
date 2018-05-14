@@ -6,7 +6,7 @@ To conclude we would to reassert the goals and their appropriate
 
 * We have analyzed with a fully modern and modular approach an important
   chemical industrial process.
-* We aquainted ourselves with the methods and situations faced in the industry
+* We acquainted ourselves with the methods and situations faced in the industry
   in terms of analysis, HAZOP, profit etc.
 * We have emphasized the importance of both reference books and industrial
   indicators in our work.

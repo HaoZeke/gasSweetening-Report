@@ -1,7 +1,7 @@
 \part{Process Description}
 
 # Overview
-The gas sweetening unit basically consist of two columns viz. absorption
+The gas sweetening unit basically consists of two columns viz. absorption
 column and stripping column. The other nuances include several valves,
 flash drum and preheaters or plate heat exchangers to maintain the
 required temperature and pressure in the column.
@@ -20,7 +20,10 @@ tertiary amine.
 
 -   The selective removal of \ch{H2S} is made by washing the sour gas with an
 aqueous solution of Methyl-Di-Ethanol-Amine (MDEA).
-- The process principles are similar to the well known SNPA-DEA process.\marginpar{The only difference is the behavior of the ethanol amine used.}
+- The process principles are similar to the well known SNPA-DEA process.
+
+
+The only difference between the aforementioned is the behavior of the ethanol amine used.
 
 
 We first investigate the case a primary or secondary amine (mono-ethanolamine or
@@ -43,14 +46,14 @@ $$\ch{CO2} + \ch{H2O} \longleftrightarrow \ch{H2CO3}$${#eq:three}
 $$\ch{CO2} + \ch{H2O} \longleftrightarrow \ch{HCO3^-} + \ch{OH^-}$${#eq:four}
 
 These acids then react with the amine to form amine bicarbonate (\ch{H2CO3^-},
-\ch{RNH_2^+}) and amine carbonate (\ch{CO2}, $\ch{R2NH2^+}_2$).
+\ch{RNH_2^+}) and amine carbonate (\ch{CO2}, $\ch{R2NH2^+}$).
 
 From kinetic considerations, three
-types of reactions can be distinguished .
+types of reactions can be distinguished.
 
 * Reaction (@eq:one) whose rate is infinite
 * Reaction (@eq:two) whose rate is moderate, depending on the amine
-* Reaction (@eq:three) and (@eq:four), known to be slow .
+* Reaction (@eq:three) and (@eq:four), known to be slow.
 
 It is known that using MEA or DEA the absorption rate \ch{CO2} in the
 absorber may be lower than the absorption rate of \ch{H2S}; however \ch{CO2}
@@ -97,7 +100,7 @@ account about feed gas quality and operating conditions.
 8. The selected feed position could be to the trays 1, 3, 5, 7, or 9 and
 the switching over from one to another is done manually.
 9. The MDEA feed nozzles are arranged such that the liquid feed is fed
-to the down comers of trays (1, 3, 5, 7 and 9) and not the trays
+to the downcomers of trays (1, 3, 5, 7 and 9) and not the trays
 themselves. 
 10. The upper tray is dry and retains the major part of
 carryovers. 
@@ -154,21 +157,21 @@ Pressure at Battery Limits : $1.9 \si{kg/cm^2}$
 
 Temperature at Battery Limits : $50^{\circ}C$
 
-## Turn Down Ratio
+## Turndown Ratio
 
 Overall turn down ratio to 40\% of the design capacity can be obtained
 without any special additions to the standard features of the equipment.
-With this turn down ratio of 40\%, design sweetening and drying
+With this turndown ratio of 40\%, design sweetening and drying
 performances will be maintained, with an increase in the specific energy
 consumption.
 
-The main process equipments in Gas Sweetening Unit are:
+Major process equipment for the gas sweetening unit are:
 
 -   Absorption column.
 
 -   Stripping column.
 
-The main process variable in the absorption and stripping colums are:
+The main process variables in the absorption and stripping columns are:
 
 -   Temperature.
 

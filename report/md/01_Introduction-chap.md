@@ -13,8 +13,8 @@ well as cost estimation and economic feasibility of the project.
 
 ## Project Goals
 
-*	Introduction to Gas Sweetening Unit 
-*	Description,comparison and justification of the methods used in the process
+*	Introduction to ammonia based gas sweetening units for refining natural gas
+*	Description, comparison and justification of the methods used in the process
 *	Study of kinetics and unit operations involved in the process
 *	Detailed process description and flow diagram
 *	Material and Energy balance of the plant
