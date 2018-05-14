@@ -1,13 +1,16 @@
-# TeX meta vars
-documentclass: scrbook
+# TeX meta vars scrbook scrreprt
+documentclass: scrreprt
+classoption:
+  - parskip=full
+  - 13pt
+  - twoside=false
+  - draft=false
 papersize: a4
-# geometry:
-#   - left=20mm
-#   - right=20mm
-  # - top=1.5in
-  # - bottom=1.5in
-  # - left=1.35in
-  # - right=1.35in
+geometry:
+  - a4paper
+  - left=40mm
+  - right=40mm
+  - top=30mm
 bibliography: refs.bib
 
 # Fignos meta vars

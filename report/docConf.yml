@@ -1,17 +1,18 @@
 # Document Variables
-author:
-  - 'Aditya Singh \newline (1404551002)'
-  - 'Rohit Goswami \newline (1404551040)'
-  - 'Shaivya Anand \newline (1404551044)'
-  - 'Sunil Saroj \newline (1404551049)'
-title: Gas Sweetening Plant Design
-institute: Harcourt Butler Technical University
-department: Department of Chemical Engineering
-submittedTo:
-  - 'Dr. Aswini Sood \newline \textnormal{\textit{\uppercase{S}upervisor}}'
-  - '\vspace*{\fill}'
-  - 'Dr. S. K. Gupta \newline \textbf{H.O.D}'
+# author:
+#   - 'Aditya Singh \newline (1404551002)'
+#   - 'Rohit Goswami \newline (1404551040)'
+#   - 'Shaivya Anand \newline (1404551044)'
+#   - 'Sunil Saroj \newline (1404551049)'
+# title: Gas Sweetening Plant Design
+# institute: Harcourt Butler Technical University
+# department: Department of Chemical Engineering
+# submittedTo:
+#   - 'Dr. Aswini Sood \newline \textnormal{\textit{\uppercase{S}upervisor}}'
+#   - '\vspace*{\fill}'
+#   - 'Dr. S. K. Gupta \newline \textbf{H.O.D}'
 logo: img/hbtuLogo.png
+abstract: Hi this is a test
 date: \today
 toc: true
 lof: true

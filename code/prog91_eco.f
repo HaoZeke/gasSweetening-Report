@@ -1,0 +1,181 @@
+      PROGRAM PROG_91
+
+C     Code from Kayode
+C     *******************************************************************
+C     * THIS PROGRAM CALCULATES THE YEARLY CASH FLOWS, THE CUMULATIVE   *
+C     * CASH FLOWS, DISCOUNT FACTORS AT A GIVEN RATE AND PRESENT        *
+C     * VALUES. THE PROGRAM FURTHER CALCULATES THE NET PRESENT VALUE,   *
+C     * PRESENT VALUE RATIO, THE AVERAGE RATE OF RETURN, THE NET        *
+C     * RETURN RATE, AND THE PAYBACK PERIOD.                            *
+C     *******************************************************************
+C     ARR    =    AVERAGE RATE OF RETURN
+C     YCF    =    YEARLY CASH FLOW
+C     DF     =    DISCOUNT FACTOR
+C     CUCF   =    CUMULATIVE CASH FLOW
+C     NPV    =    NET PRESENT VALUE
+C     NOCF   =    NUMBER OF PROJECT LIFE EXCLUDING YEAR 0
+C     NRR    =    NET RETURN RATE
+C     PV     =    PRESENT VALUE
+C     PVR    =    PRESENT VALUE RATIO
+C     TIME   =    PAYBACK PERIOD
+C     *******************************************************************
+
+      REAL*8 YCF, DF, PV, NPV, CUCF
+      EXTERNAL XNPV
+      REAL NRR
+
+      INTEGER TIME, TIME1
+
+      DIMENSION YCF(0:100), DF(0:100), PV(0:100), CUCF(0:100)
+C
+      OPEN (UNIT = 3, FILE = 'DATA91_B.DAT', STATUS ='OLD', ERR=18)
+      OPEN (UNIT = 1, FILE = 'PRN_ECO_B')
+C      READ THE NUMBER OF YEARLY CASH FLOWS EXCLUDING YEAR 0: NOCF
+      READ (3, *, ERR=19) NOCF
+C      READ THE ANNUAL DISCOUNT RATE IN PERCENTAGE: DISC
+C      READ THE YEARLY CASH FLOW: YCF
+      READ (3, *, ERR=19) DISC
+      READ (3, *, ERR=19) (YCF(K), K = 0, NOCF)
+
+      GO TO 10
+
+ 18   WRITE (*, 21)
+ 21   FORMAT (6X,'DATA FILE DOES NOT EXIST')
+
+      GO TO 999
+
+ 19   WRITE (*, 23)
+ 23   FORMAT(6X,'ERROR MESSAGE IN THE DATA VALUE')
+
+      GO TO 999
+
+ 10   WRITE (1, 100)
+ 100  FORMAT (//,25X,'NET PRESENT VALUE CALCULATION',/1H, 78(1H*))
+
+      NOCF1 = NOCF + 1
+
+      WRITE (1, 110) NOCF1
+ 110  FORMAT(/,20X,I4,3X,'YEARLY CASH FLOWS INCLUDING YEAR 0')
+
+      WRITE (1, 120) DISC
+ 120  FORMAT (/,20X,F8.2,3X,'PERCENTAGE ANNUAL DISCOUNT RATE ',/,
+     + 1H, 78(1H-))
+
+      WRITE (1, 130)
+ 130  FORMAT (//, 7X,'YEAR', 5X, 'CASH FLOWS ($)', 4X, 'CUMULATIVE',
+     + 10X, 'DISCOUNT', 8X, 'PRESENT')
+
+      WRITE (1, 140)
+ 140  FORMAT (34X,'CASH FLOWS ($)', 6X, 'FACTOR', 10X, 'VALUE ($)',
+     + /,1H, 78(1H-))
+
+C     CALCULATE THE CUMULATIVE CASH FLOW
+
+
+      CUCF(0) = YCF(0)
+      DO I = 1, NOCF
+         CUCF(I) = CUCF(I-1) + YCF(I)
+      END DO
+
+      R1 = DISC/100.0
+      PV(0) = YCF(0)*1.0
+
+      DO 15 I1 = 0, 0
+      IF (I1 .EQ. 0) THEN
+         R1 = 0.0
+         DF(I1) = 1.0/((1.0+R1)**I1)
+         PV(I1) = YCF(I1)*DF(I1)
+      ELSE
+      ENDIF
+ 15   CONTINUE
+
+      R1 = DISC/100.0
+
+      DO 20 I1 = 1, NOCF
+         DF(I1) = 1.0/((1.0+R1)**I1)
+         PV(I1) = YCF(I1)*DF(I1)
+ 20   CONTINUE
+
+      DO K = 0, NOCF
+      WRITE (1, 150) K, YCF(K), CUCF(K), DF(K), PV(K)
+ 150  FORMAT (5X,I3,5X,F14.2,5X,F14.2,5X,F9.4,5X,F14.2)
+      END DO
+
+      WRITE (1, 160)
+ 160  FORMAT (78(1H-))
+
+C     CALCULATE THE NET PRESENT VALUE FROM THE PRESENT VALUE
+
+      NPV = 0.0
+      DO J = 0, NOCF
+      NPV = NPV + PV(J)
+      END DO
+
+      WRITE (1, 170) NPV
+ 170  FORMAT (1H0, 6X,'THE NET PRESENT VALUE ($):', 3X, T40, F14.2)
+
+C     CALCULATE THE PRESENT VALUE RATIO, PVR
+C     PVR = PRESENT VALUE OF ALL POSITIVE CASH FLOWS/
+C     PRESENT VALUE OF ALL NEGATIVE CASH FLOWS
+      SUM1 = 0.0
+
+      DO K = 1, NOCF
+      SUM1 = SUM1 + PV(K)
+      END DO
+
+      PVR = SUM1 /ABS(YCF(0))
+
+      WRITE (1, 180) PVR
+ 180  FORMAT (1H0, 6X, 'PRESENT VALUE RATIO:', 3X, T40, F8.3)
+
+C     CALCULATE THE NET RETURN RATE (NRR) i.e. THE NET PRESENT VALUE
+C     DIVIDED BY THE PRODUCT OF INITIAL INVESTMENT AND THE PROJECT LIFE
+C     (EXCLUDING YEAR 0).
+
+      NRR = ABS(NPV/(ABS(PV(0))*NOCF))*100
+
+      WRITE(1, 190) NRR
+ 190  FORMAT (1H0, 6X, 'THE NET RETURN RATE:', 3X, T40, F8.2, 3X, '%')
+
+C     CALCULATE THE AVERAGE RATE OF RETURN (ARR) i.e THE AVERAGE
+C     CASH FLOW DURING THE LIFE OF THE PROJECT (EXCLUDING YEAR 0).
+
+      SUM = 0.0
+      DO I = 1, NOCF
+         SUM = SUM + YCF(I)
+      END DO
+
+      AVSUM = SUM/NOCF
+      ARR = (AVSUM/ABS(YCF(0)))*100.0
+
+      WRITE (1, 200) ARR
+ 200  FORMAT(1H0, 6X, 'THE AVERAGE RATE OF RETURN:', 3X, T40, F8.2,
+     + 3X,'%')
+
+C     CALCULATE THE PAYBACK TIME FROM THE CUMULATIVE CASH FLOW, TIME: YEARS
+
+      DO I=0, NOCF
+         IF ( CUCF(I+1) .GT. CUCF(I) .AND. CUCF(I+1) .GE. 0.0) THEN
+            TEMP = CUCF(I+1)
+            CUCF(I+1) = CUCF(I)
+            CUCF(I) = TEMP
+            TIME = I
+            TIME1 = TIME + 1
+            GO TO 40
+         ELSE
+         ENDIF
+      END DO
+
+ 40   WRITE (1, 210) TIME, TIME1
+ 210  FORMAT (1H0,6X,'THE PAYBACK PERIOD IS BETWEEN:',
+     + 3X,T45,I2,2X,'AND',2X,I2,3X,'YEARS')
+
+C     FORM FEED THE PRINTING PAPER TO TOP OF THE NEXT PAGE.
+
+      WRITE(1, *) CHAR(12)
+
+      CLOSE (3, STATUS = 'KEEP')
+      CLOSE (1)
+
+ 999  STOP
+      END

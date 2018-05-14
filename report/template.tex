@@ -15,68 +15,72 @@ $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
 % Insert Packages here
+  \usepackage[utf8]{inputenc}
+  \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
+  \usepackage{textcomp} % provides euro and other symbols
+$if(geometry)$
+\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+\geometry{$for(geometry)$$geometry$$sep$,$endfor$}
+$endif$
+
+% Used to be loaded by classicThesis
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{minted}
+\usemintedstyle{autumn}
+
+
+% \usepackage{geometry}
+%  \geometry{
+%  a4paper,
+%  left=40mm,
+%  top=30mm,
+%  right=40mm,
+%  }
+
+\usepackage[bibsys=biber]{cleanthesis}
+\setlength{\headheight}{15.2pt}
+\setlength{\headsep}{10pt}
+\pagestyle{fancy}
+% \renewcommand{\headrulewidth}{0pt} % no line in header area
+% \fancyhead{}
+% \chead{your header in center} %\lhead and \rhead also available
+
+% Prevent biblatex warnings
+\usepackage{csquotes}
+% Define
+
+% ********************************************************************
+% Fancy Stuff
+% ********************************************************************  
+\usepackage{textcase} % for \MakeTextUppercase
+
+% \ifthenelse{\boolean{@minionprospacing}}%
+%     {%
+%         \PackageInfo{classicthesis}{Using MinionPro's textssc for character spacing.}%
+%         \DeclareRobustCommand{\spacedallcaps}[1]{\textssc{\MakeTextUppercase{#1}}}%
+%         \DeclareRobustCommand{\spacedlowsmallcaps}[1]{\textssc{\MakeTextLowercase{#1}}}%
+%     }{%
+%         \ifthenelse{\boolean{@pdfspacing}}%
+%         {%
+%             \PackageInfo{classicthesis}{Using pdftex/microtype for character spacing.%
+%                                         Make sure your pdftex is version 1.40 or higher.}%
+%             \microtypesetup{expansion=false}%
+%             \DeclareRobustCommand{\spacedallcaps}[1]{\textls[160]{\MakeTextUppercase{#1}}}%
+%             \DeclareRobustCommand{\spacedlowsmallcaps}[1]{\textls[80]{\scshape\MakeTextLowercase{#1}}}%
+%         }{%
+%             \RequirePackage{soul} % for letterspacing 
+%                 \sodef\allcapsspacing{\upshape}{0.15em}{0.65em}{0.6em}%
+%                 \sodef\lowsmallcapsspacing{\scshape}{0.075em}{0.5em}{0.6em}%   
+%                 \DeclareRobustCommand{\spacedallcaps}[1]{\MakeTextUppercase{\allcapsspacing{#1}}}%   
+%                 \DeclareRobustCommand{\spacedlowsmallcaps}[1]{\MakeTextLowercase{\textsc{\lowsmallcapsspacing{#1}}}}%\protect
+%         }%
+%     }
+
 \usepackage{mathtools,physics}
 \usepackage{enumitem}  
 \usepackage{sidenotes}
 \usepackage{xspace}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
-  \usepackage[utf8x]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
-$if(mathspec)$
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{unicode-math}
-  \fi
-$else$
-  \usepackage{unicode-math}
-$endif$
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
-$for(fontfamilies)$
-  \newfontfamily{$fontfamilies.name$}[$fontfamilies.options$]{$fontfamilies.font$}
-$endfor$
-$if(mainfont)$
-    \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
-$endif$
-$if(sansfont)$
-    \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
-$endif$
-$if(monofont)$
-    \setmonofont[Mapping=tex-ansi$if(monofontoptions)$,$for(monofontoptions)$$monofontoptions$$sep$,$endfor$$endif$]{$monofont$}
-$endif$
-$if(mathfont)$
-$if(mathspec)$
-  \ifxetex
-    \setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
-  \else
-    \setmathfont[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
-  \fi
-$else$
-  \setmathfont[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
-$endif$
-$endif$
-$if(CJKmainfont)$
-  \ifxetex
-    \usepackage{xeCJK}
-    \setCJKmainfont[$for(CJKoptions)$$CJKoptions$$sep$,$endfor$]{$CJKmainfont$}
-  \fi
-$endif$
-$if(luatexjapresetoptions)$
-  \ifluatex
-    \usepackage[$for(luatexjapresetoptions)$$luatexjapresetoptions$$sep$,$endfor$]{luatexja-preset}
-  \fi
-$endif$
-$if(CJKmainfont)$
-  \ifluatex
-    \usepackage[$for(luatexjafontspecoptions)$$luatexjafontspecoptions$$sep$,$endfor$]{luatexja-fontspec}
-    \setmainjfont[$for(CJKoptions)$$CJKoptions$$sep$,$endfor$]{$CJKmainfont$}
-  \fi
-$endif$
-\fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
@@ -123,9 +127,9 @@ $endif$
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
 $endif$
-$if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
-$endif$
+
+
+
 $if(natbib)$
 \usepackage[$natbiboptions$]{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
@@ -228,21 +232,11 @@ $endfor$
 \fi
 $endif$
 $if(dir)$
-\ifxetex
-  % load bidi as late as possible as it modifies e.g. graphicx
-  $if(latex-dir-rtl)$
-  \usepackage[RTLdocument]{bidi}
-  $else$
-  \usepackage{bidi}
-  $endif$
-\fi
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \TeXXeTstate=1
   \newcommand{\RL}[1]{\beginR #1\endR}
   \newcommand{\LR}[1]{\beginL #1\endL}
   \newenvironment{RTL}{\beginR}{\endR}
   \newenvironment{LTR}{\beginL}{\endL}
-\fi
 $endif$
 
 $if(title)$
@@ -258,8 +252,7 @@ $if(institute)$
 $endif$
 \date{$date$}
 
-% Prevent biblatex warnings
-\usepackage{csquotes}
+
 % Well, it's called classicThesis.tex :P
 \usepackage{subfig}
 \usepackage{authblk}
@@ -281,8 +274,9 @@ $endif$
 \newcommand{\myDepartment}{Department of Chemical Engineering\xspace}
 \newcommand{\myUni}{\institute\xspace}
 
-\usepackage[eulerchapternumbers,subfig,beramono,eulermath,pdfspacing,parts]%
-{classicthesis}
+
+%\usepackage[eulerchapternumbers,subfig,beramono,eulermath,pdfspacing,parts]%
+%{classicthesis}
 \usepackage{chemformula}
 \usepackage{siunitx}
 \usepackage{multicol}
@@ -295,6 +289,8 @@ $endif$
 %   filecolor=black,     % color of file links
 %   urlcolor=Maroon         
 % }
+% Load pdfpages late to avoid errors
+\usepackage{pdfpages}
 % End of my additions
 
 \begin{document}

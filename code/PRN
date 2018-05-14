@@ -1,0 +1,40 @@
+
+
+
+                  *SHELL AND TUBE HEAT EXCHANGER RATING*
+******************************************************************************
+                                        TUBE SIDE          SHELL SIDE
+------------------------------------------------------------------------------
+  FLUID TYPE:                          MDEA                STEAM          
+  FLUID FLOW RATE , lb/hr.:                 1587.           47000000.
+  SPECIFIC HEAT CAPACITY, Btu/ib.oF:      0.143               0.484
+  FLUID DENSITY, lb/ft^3:                63.900               0.430
+  FLUID VISCOSITY, cP:                   38.000               0.012
+  FLUID THERMAL COND. Btu/ft.h.oF:      311.985               0.171
+  FLUID INLET TEMPERATURE, oF:             108.                212.
+  FLUID OUTLET TEMPERATURE, oF:            266.                104.
+  INSIDE DIAMETER, inch:                  0.787             255.906
+  OUTSIDE DIAMETER, inch:                 0.984
+  TUBE PITCH, inch:                       1.000            SQUARE PITCH
+  TUBE LENGTH, ft.:                      16.000
+  NUMBER OF TUBES:                        64.
+  NUMBER OF PASSES:                      6.                  3.
+  NUMBER OF BAFFLES:                                         3.
+  BAFFLE SPACING, inch:                                    59.0
+  FLUID VELOCITY, ft/sec.:                0.191            ********
+  REYNOLDS NUMBER:                           31.           49793652.
+  PRANDTL NUMBER:                        0.0422              0.0824
+  FRICTION FACTOR (ft^2/in^2):          0.00000             0.00043
+  HEAT COEFF., Btu/hr.ft^2.oF:            1161.8             17722.5
+  PRESSURE DROP, psi:                    0.0038            ********
+  FOULING FACTOR:                        0.0030              0.0010
+  APPROACH FACTOR, F:                       NaN
+  LOG MEAN TEMP. DIFF. oF:                18.61
+  CORRECTED MEAN TEMP. DIFF. oF:            NaN
+  OVERALL HEAT COEFF., Btu/hr.ft^2.oF:     203.4
+  OUTSIDE AREA OF UNIT, ft^2:              251.9
+  HEAT LOAD ON UNIT, Btu/hr:                 35955.
+  HEAT TRANSFERRED, Btu/hr:                     NaN
+,------------------------------------------------------------------------------
+ 
+ 

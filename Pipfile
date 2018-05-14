@@ -7,6 +7,7 @@ name = "pypi"
 pandoc-tablenos = "*"
 pandoc-eqnos = "*"
 pandoc-fignos = "*"
+pygments = "*"
 
 [dev-packages]
 

@@ -26,8 +26,10 @@ For each equipment considered in this section we shall extend the theory of
 associations and correlations developed before in the literature survey of
 \autoref{part:litRev} by demonstrating calculations for the same.
 
-# Mechanical Design Of GSU Absorption Tower
+# Mechanical Design of GSU Absorption Tower
+
 ## Objective
+
 We will develop here a an estimate of the thickness of the absorption tower used
 in the Gas Sweetening Unit based on the theory developed in the previous chapter.
 
@@ -109,7 +111,63 @@ that the $18\si{\mm}$ plate is at the bottom of the absorber.
 
 ### Weight Estimation
 
-Therefore we now assert the diameter is given by
+Weight of plates $= 1.2 \times 4.9 = 5.9 \si{kN}$
+
+Since , there are 14 valve trays ,therefore
+
+Total weight of plates in the column $= 82 . 6 \si{kN}$
+
+Hence,
+
+Wall density of glass wool $= 130 \si{kg/m^3}$
+
+Volume of insulation $= \pi {\times} 2 {\times} 20{\times} 0.07 = 8.79 \si{m^2}$
+
+Weight of insulation $= 11.21 \si{kN}$
+
+Total Weight $= 213 + 82.6 +11.21 $
+
+$$= 306.81\si{kN}$$
+
+### Stress estimates and analysis
+
+Now, calculating the stresses due to wind loading,
+
+Dynamic wind pressure $= 1280 \si{Pa}$
+
+Mean Diameter of the tower $= 2.5 + (14 + 70 ) \times 0.002 = 2.668 \si{m}$
+
+Wind loading    $=  1280 \times 2.668 = 3415 \si{Pa}$
+
+Bending moment $= \frac{3415 }{2} \times 20^2 = 683000 \si{Nm}$
+
+Checking our calculations and assumptions using stress analysis
+
+For $18 \si{mm}$ plates,
+
+$F_l = \frac{1 \times 2500}{4 \times18} = 34.72 \si{Pa}$
+
+$F_h = \frac{1 \times 2500}{ 2 \times18} = 69.44 \si{Pa}$
+
+Dead Weight $= \frac{306.81 \times10^3} { \pi \times 2518 \times 18} = 6.76 \si{Pa}$
+
+Bending length of plate $= 2500 + 2 \times 18 =2536 \si{mm}$
+
+$I_v = \frac{\pi}{64 \times (25364 - 25004) }= 1.128 \times 101 {mm^4}$
+
+$F_b = 683000 \times 10^3 \times \frac{(2500/2 +18 )} {1.128 \times10^{11}} = 69.06 \si{Pa}$
+
+Resulting Longitudinal Stress:
+
+Stress based on upward wind flow $= 34.72 - 6.76 + 69.06 = 97.02 \si{Pa}$
+
+Stress based on downward wind flow $= 69.06 + 6.76 - 34.72 = 41.1 \si{Pa}$
+
+Difference in principle stress $= 97.02 - (-41.1) = 138.73 \si{Pa}$
+
+Buckling stress $= 2 \times10^4 \times \frac{18} {2536} = 141.95 \si{Pa}$
+
+Maximum compressive stress without internal pressure $= 6.76 + 69 . 06 = 77.83 \si{Pa}$
 
 # Mechanical Design of Tray Column
 ## Objective
@@ -159,7 +217,7 @@ Where:
 As per the theoretical considerations discussed previously, our torispherical
 head will relevant dimensions as given by @eq:toriHead.
 
-$$Thickness = \frac{pd}{(2 \times f \times J – 0.2 \times p)} = 7.81 \si{\mm}$${#eq:toriHead}
+$$Thickness = \frac{pd}{(2 \times f \times J - 0.2 \times p)} = 7.81 \si{\mm}$${#eq:toriHead}
 
 Where:
 
@@ -251,9 +309,9 @@ Assume:
 
 Heat load = Flowrate $\times$ Specific Heat Capacity $\times\Delta T$
 
-​           $Q = 0.13\times600\times88 = 6864\si{W}$
+$$Q = 0.13 \times 600 \times 88 = 6864 \si{W} $$
 
-​               $A=\frac{Q}{U\times{LMTD}}=0.194 m^2$
+$$ A = \frac{Q}{U} \times LMTD = 0.194 \si{m^2}$$
 
 Number of plates in a stack $=\frac{A}{LB}=21$
 
