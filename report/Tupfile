@@ -32,10 +32,30 @@ cat md/*.md >> compile.md \
 |> pandoc --filter pandoc-tablenos --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-citeproc compile.md -o tex/output.tex --template template.tex \
 |> tex/output.tex
 
-# Make PDF
-# : tex/output.tex |> \
-# latexmk %f -r .latexmkrc -outdir=pdf/ -silent && \
-# latexmk -c %f -r .latexmkrc -outdir=pdf/ -silent \
-# |> pdf/%B.pdf
+# Make PDF with latexmk
+: tex/output.tex |> \
+latexmk %f -r .latexmkrc -outdir=pdf/ \
+|> pdf/%B.pdf | pdf/%B.aux pdf/%B.bbl pdf/%B.blg pdf/%B.out pdf/%B.bcf \
+pdf/%B.run.xml pdf/%B.fdb_latexmk pdf/%B.fls \
+pdf/%B.lof pdf/%B.log pdf/%B.toc
+
+# Get the static title
+# Could use many more images here in order
+: static/01_title.png static/*.jpg |> \
+convert %f -compress jpeg -resize 1240x1753 \
+-extent 1240x1753 -gravity center \
+-units PixelsPerInch -density 150x150 static/TitlePreamble.pdf \
+|> static/TitlePreamble.pdf
+
+# Get the static word crap
+# : static/preamble.docx |> \
+# libreoffice --headless --convert-to pdf %f --outdir static/ \
+# |> static/preamble.pdf
+
+# Join static preamble PDF
+: static/TitlePreamble.pdf pdf/output.pdf |> \
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=pdf/finalProj.pdf \
+%f \
+|> pdf/finalProj.pdf
 
 # I'd rather run latexmk -pvc directly to get the mupdf output...

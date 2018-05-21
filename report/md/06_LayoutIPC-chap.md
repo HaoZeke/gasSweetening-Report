@@ -53,9 +53,9 @@ tower, completing the cycle.
 # Instrumentation and Process Control 
 
 For the purpose of our discussion on the control of this fascinating process we
-shall refer to the process flow sheet given below.
+shall refer to the process flow sheet given in @fig:speightOlamine.
 
-![Amine or olamine sweetening from @speight2014chemistry](img/amineProcess.png)
+![Amine or olamine sweetening from @speight2014chemistry](img/amineProcess.png){#fig:speightOlamine}
 
 ## Absorber 
 
@@ -68,7 +68,3 @@ shall refer to the process flow sheet given below.
 ## Reboiler Control
 
 ![](img/reboilerIPCOne.png)
-
-\newpage
-
-![](img/reboilerTwo.png)

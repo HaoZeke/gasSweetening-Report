@@ -6,10 +6,10 @@ column and stripping column. The other nuances include several valves,
 flash drum and preheaters or plate heat exchangers to maintain the
 required temperature and pressure in the column.
 
-The overall process is described with the flowsheet in the IPC section.
+The overall process is described with the flowsheet in the IPC section and in @fig:MDEAsample.
 
 
-![MDEA sample unit](img/mdeaTower.png)
+![MDEA sample unit](img/mdeaTower.png){#fig:MDEAsample}
 
 # MDEA Process Principles
 

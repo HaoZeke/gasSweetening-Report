@@ -164,5 +164,6 @@ Table: Overall Material Balance. {#tbl:Overall}
 
 ## Energy Balance
 
-This section is equivalent to energy balance done in the preheater section .
+This section is equivalent to energy balance done in the preheater section.
+
 Since, the other equipment in use are completely insulated, therefore the overall energy balance suggests energy loss $= 80235 \si{J}$ 

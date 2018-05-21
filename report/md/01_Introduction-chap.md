@@ -1,6 +1,6 @@
 # Project Overview
 
-![](img/bigPlant.png){height=50%}
+![Plant Structure](img/bigPlant.png){height=50% #fig:plantStruct}
 
 ## Problem Definition
 
@@ -9,7 +9,8 @@ sour gas. Using the principles of mass transfer and organic chemistry, the
 project involves suggestion of a suitable solvent, design of absorption and
 stripping column, process description and a relevant material and energy balance
 of the overall plant giving details of the major equipment used in the plant as
-well as cost estimation and economic feasibility of the project.
+well as cost estimation and economic feasibility of the project. The plant
+structure is shown in @fig:plantStruct.
 
 ## Project Goals
 

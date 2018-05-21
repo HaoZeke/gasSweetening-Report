@@ -18,14 +18,21 @@ $endif$
   \usepackage[utf8]{inputenc}
   \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
   \usepackage{textcomp} % provides euro and other symbols
+
+\usepackage[bibsys=biber]{cleanthesis}
 $if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+% Preloaded by cleanthesis
+%\usepackage{geometry}
 \geometry{$for(geometry)$$geometry$$sep$,$endfor$}
 $endif$
 
 % Used to be loaded by classicThesis
 \usepackage[dvipsnames]{xcolor}
 
+% Full page images
+% \usepackage{incgraph,tikz}
+
+% Syntax Highlighting
 \usepackage{minted}
 \usemintedstyle{autumn}
 
@@ -38,9 +45,6 @@ $endif$
 %  right=40mm,
 %  }
 
-\usepackage[bibsys=biber]{cleanthesis}
-\setlength{\headheight}{15.2pt}
-\setlength{\headsep}{10pt}
 \pagestyle{fancy}
 % \renewcommand{\headrulewidth}{0pt} % no line in header area
 % \fancyhead{}

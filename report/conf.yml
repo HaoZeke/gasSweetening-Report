@@ -8,9 +8,8 @@ classoption:
 papersize: a4
 geometry:
   - a4paper
-  - left=40mm
-  - right=40mm
-  - top=30mm
+  - headsep=10pt
+  - headheight=15.2pt
 bibliography: refs.bib
 
 # Fignos meta vars
