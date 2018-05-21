@@ -555,3 +555,6 @@ wordPrimitives/
 
 # Outputs
 *.pdf
+
+# Static Stuff
+static/
