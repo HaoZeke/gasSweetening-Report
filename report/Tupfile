@@ -39,23 +39,31 @@ latexmk %f -r .latexmkrc -outdir=pdf/ \
 pdf/%B.run.xml pdf/%B.fdb_latexmk pdf/%B.fls \
 pdf/%B.lof pdf/%B.log pdf/%B.toc
 
+# Get the static word crap
+: static/preamble.docx |> \
+libreoffice --headless --convert-to pdf %f --outdir static/ \
+|> static/preamble.pdf
+
+# Produce the static images
+: static/preamble.pdf |> \
+convert -quality 100 -density 600x600 \
+%f static/preamble-%%d.jpg \
+|> static/preamble-0.jpg static/preamble-1.jpg static/preamble-2.jpg
+
 # Get the static title
 # Could use many more images here in order
-: static/01_title.png static/*.jpg |> \
+: static/01_title.png static/preamble-*.jpg |> \
 convert %f -compress jpeg -resize 1240x1753 \
 -extent 1240x1753 -gravity center \
 -units PixelsPerInch -density 150x150 static/TitlePreamble.pdf \
 |> static/TitlePreamble.pdf
 
-# Get the static word crap
-# : static/preamble.docx |> \
-# libreoffice --headless --convert-to pdf %f --outdir static/ \
-# |> static/preamble.pdf
-
 # Join static preamble PDF
 : static/TitlePreamble.pdf pdf/output.pdf |> \
-gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=pdf/finalProj.pdf \
-%f \
+pdfunite %f pdf/finalProj.pdf\
 |> pdf/finalProj.pdf
 
 # I'd rather run latexmk -pvc directly to get the mupdf output...
+# Other conversion options
+# gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=pdf/finalProj.pdf \
+# gs -dNOPAUSE -dBATCH -sDEVICE=jpeg -r96 -sOutputFile='page-%00d.jpg' input.pdf
