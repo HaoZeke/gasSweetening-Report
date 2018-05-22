@@ -1,7 +1,8 @@
 # Gas Sweetening Project [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge)](https://www.paypal.me/HaoZeke/)
 
-This is a complete, reproducible project I carried out towards the completion of
-my bachelors degree in chemical engineering at HBTU, Kanpur.
+This is a complete, reproducible project I carried out with a group of
+classmates towards the completion of my bachelors degree in chemical engineering
+at HBTU, Kanpur.
 
 Later the code should be in a repo of its own too.
 
@@ -63,6 +64,11 @@ Every contributor and member of the tech stack. For more details read the
 report.
 
 The code was adapted from the excellent work by [Kayode Coker](https://archive.org/details/CokerK.1995FortranProgramsForChemicalProcessDesignAnalysisAndSimulation)
+
+## Credits
+
+* The code inputs and much of the calculations were done by @shaivyaR.
+* The initial outline and some calculations were done by Aditya Singh.
 
 ## Licenses
 
