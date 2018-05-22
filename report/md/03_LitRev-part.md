@@ -735,12 +735,14 @@ making both fluids circulate through alternate channels separated by the heat tr
 
 ![Flow pattern of a typical plate heat exchanger](img/plateHeatFlow.png){#fig:plateHeatFlow}
 
-Basically, a plate heat exchanger consists of a pack of corrugated metal plates with portholes for the pas-
-sage of the two fluids. Heat transfer takes place through the plates. The plate pack is assembled between a
-fixed frame plate and a movable pressure plate and is compressed by tightening bolts (@fig:plateCompo). The plates
-are fitted with gaskets that seal the interplate channels. The number of plates is defined by the heat transfer
-requirements. The plates and pressure plate are suspended by an upper carrying bar and located by a lower
-guiding bar, both of which are fixed to a support column.
+Basically, a plate heat exchanger consists of a pack of corrugated metal plates
+with portholes for the passage of the two fluids. Heat transfer takes place
+through the plates. The plate pack is assembled between a fixed frame plate and
+a movable pressure plate and is compressed by tightening bolts
+(@fig:plateCompo). The plates are fitted with gaskets that seal the interplate
+channels. The number of plates is defined by the heat transfer requirements. The
+plates and pressure plate are suspended by an upper carrying bar and located by
+a lower guiding bar, both of which are fixed to a support column.
 
 ![Components of a typical plate heat exchanger](img/plateHeatCompo.png){#fig:plateCompo}
 

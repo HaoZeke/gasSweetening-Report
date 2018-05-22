@@ -48,7 +48,8 @@ respectively, in the reflux condenser.
 be vented, incinerated, or directed to a sulfur recovery system.
 8. Hot regenerated lean amine is cooled in a solvent aerial cooler and circulated to the contactor 
 tower, completing the cycle.
-9. A variety of heat sources can be used for the still reboiler—direct fired, waste heat, hot oil, and 
+9. A variety of heat sources can be used for the still reboiler—direct fired,
+waste heat, hot oil, and steam systems. 
 
 # Instrumentation and Process Control 
 
