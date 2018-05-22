@@ -46,7 +46,7 @@ libreoffice --headless --convert-to pdf %f --outdir static/ \
 
 # Produce the static images
 : static/preamble.pdf |> \
-convert -quality 100 -density 600x600 \
+convert -quality 100 -density 800x800 \
 %f static/preamble-%%d.jpg \
 |> static/preamble-0.jpg static/preamble-1.jpg static/preamble-2.jpg
 
