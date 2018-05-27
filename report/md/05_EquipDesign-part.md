@@ -246,11 +246,12 @@ The results are summarized in @tbl:ResultTori
 Table: GSU Tower Data. {#tbl:ResultTori}
 
 # Mechanical Design of Reboiler
-##  Objective
+
+## Objective
 
 To calculate the number of tubes in the reboiler.
 
-##  Data
+## Data
 
 | Variables                                                    | Values            |
 | ------------------------------------------------------------ | ----------------- |
@@ -275,7 +276,9 @@ $n=64$
  Material of construction $= SS340L$
 
  Thickness of shell (from previous calculations ) $= 18 \si{mm}$
+ 
 # Mechanical Hand Analysis of Plate Heat Exchanger
+
 ## Objective
 
 To find the number of plates in one stack of a PHE
@@ -349,7 +352,9 @@ This implies our assumption was correct
 
 ##  Comment
 This is in close approximation to total $350$ plates used in PHE.
+
 # Mechanical Design of Centrifugal Pump
+
 ## Objective
 
 To calculate the minimum power of the pump to be installed for pumping MDEA to absorber from MDEA storage tank.
@@ -393,10 +398,15 @@ Table: Centrifugal Pump Data. {#tbl:CP}
 ##  Comments
 
  Result obtained is in close accordance with the $200 \si{hP} = 201.6 \si{kW}$ pump used in the plant.
+ 
 # Mechanical Design of Storage Vessel
+
 ## Objective
+
 To calculate the thickness of the storage vessel
+
 ## Data
+
 The data used is given in @tbl:SV
 
 | Variables                                                | Values         |
