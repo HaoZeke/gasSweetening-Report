@@ -21,3 +21,4 @@
 
 * TODO Finish and check the absorber design 
 
+* TODO Change the LMTD F Factor to be closer to 1
